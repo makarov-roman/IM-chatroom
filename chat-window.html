@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IM client</title>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="assets/dist/css/chat-window.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="chat_get-username">
+    <input class="chat_username-input" type="text" placeholder="Enter your username">
+</div>
+<div class="chat_messages">
+    <div class="chat_wrapper">
+
+    </div>
+
+    <div class="bugfix_input-padding"> </div>
+    <textarea class="chat_input" name="message_input" id="messageInput" placeholder="Type your message here"></textarea>
+</div>
+<div class="chat_clients">
+    <ul class="list-style-type_none">
+
+    </ul>
+    <button class="button chat_button_change-username">Change Username</button>
+</div>
+</body>
+<script src="assets/js/client/custom.js"></script>
+<script src="assets/js/client/controller.js"></script>
+<script src="assets/js/client/reciever.js"></script>
+</html>

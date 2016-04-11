@@ -1,0 +1,16 @@
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background: #434343;
+}
+
+.chat-window {
+    min-width: 600px;
+    min-height: 600px;
+    margin: 40px 0;
+}

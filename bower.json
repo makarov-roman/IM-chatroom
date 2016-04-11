@@ -1,0 +1,25 @@
+{
+  "name": "rooxTest",
+  "description": "IM client",
+  "main": "index.html",
+  "authors": [
+    "rmakarov94@gmail.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "normalize-css": "normalize.css#^4.0.0"
+  }
+}
