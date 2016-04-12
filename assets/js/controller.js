@@ -14,7 +14,7 @@ window.Controller = {
         Storage.setUser(content, client);
 
         this.fetch('user');
-        this.fetch('message');
+        //this.fetch('message');
     },
     message: function (message) {
         var data = JSON.parse(message[0].data),

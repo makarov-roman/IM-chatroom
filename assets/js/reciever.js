@@ -1,12 +1,14 @@
 "use strict";
-var mainReciever = new Reciever(Controller.user.bind(Controller), Controller.message.bind(Controller));
+var reciever = new Reciever(Controller.user.bind(Controller),
+    Controller.message.bind(Controller));
 
 if (window.addEventListener) {
-    window.addEventListener("message", mainReciever.handleMessage.bind(mainReciever));
+    window.addEventListener("message", reciever.handleMessage.bind(reciever));
 } else {
     // IE8
-    window.attachEvent("onmessage", mainReciever.handleMessage.bind(mainReciever));
+    window.attachEvent("onmessage", reciever.handleMessage.bind(reciever));
 }
+//reciever.startListen();
 
 
 

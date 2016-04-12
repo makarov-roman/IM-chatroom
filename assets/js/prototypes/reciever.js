@@ -1,9 +1,9 @@
 "use strict";
 
-//TODO передавать контекст в конструктор?
 window.Reciever = function (userHandler, messageHandler) {
     this.userHandler = userHandler;
     this.messageHandler = messageHandler;
+
 };
 window.Reciever.prototype.handleMessage = function (message) {
     var data = JSON.parse(message.data);
@@ -16,5 +16,14 @@ window.Reciever.prototype.handleMessage = function (message) {
             break;
         default:
             throw new Error('Type wasn\'t recognized');
+    }
+};
+window.Reciever.prototype.startListen = function () {
+    console.log(this);
+    if (window.addEventListener) {
+        window.addEventListener("message", this.handleMessage.bind(this));
+    } else {
+        // IE8
+        window.attachEvent("onmessage", this.handleMessage.bind(this));
     }
 };
