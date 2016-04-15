@@ -1,3 +1,5 @@
+$MainColor: #9c9cfc;
+
 html {
     height: 100%;
     font-family: Open Sans, sans-serif;
@@ -47,6 +49,10 @@ body {
 .message_name {
     padding: 0 5px;
 }
+.message_user {
+    border-bottom: 2px solid;
+    color: $MainColor
+}
 
 .chat_input {
     width: 57%;
@@ -77,7 +83,7 @@ body {
     width: 100%;
     bottom: 0;
     left: 0;
-    background: #9c9cfc;
+    background: $MainColor;
 }
 .chat_get-username {
     position: fixed;
@@ -94,7 +100,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    background: #9c9cfc;
+    background: $MainColor;
 }
 
 .chat_username-input {

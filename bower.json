@@ -19,7 +19,10 @@
     "tests"
   ],
   "dependencies": {
-    "handlebars": "^4.0.5",
     "normalize-css": "normalize.css#^4.0.0"
+  },
+  "devDependencies": {
+    "requirejs": "^2.2.0",
+    "eventEmitter": "^4.3.0"
   }
 }
